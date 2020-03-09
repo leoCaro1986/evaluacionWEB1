@@ -1,5 +1,7 @@
 <?php
 
+include('funciones.php');
+
 echo "TALLER 1 GENERALIDADES PHP. " ;
 echo "<br> Elaborado por LEONARDO CARO <br>";
 
@@ -192,8 +194,32 @@ con los años de nacimiento 1991,1995,1987.*/
 
 echo "<br><br>Ejercicio 8 <br>";
 
+$edad=calcularEdad(1991,2020);
+echo("Si nacio en 1991 su edad es : ".$edad."<br>");
+$edad=calcularEdad(1995,2020);
+echo("Si nacio en 1995 su edad es : ".$edad."<br>");
+$edad=calcularEdad(1987,2020);
+echo("Si nacio en 1987 su edad es : ".$edad);
+
+/**9. La federación nacional de fútbol también necesita que usted codifique una nueva función para establecer
+* el biotipo de los jugadores teniendo en cuenta la estatura de estos. La clasificación internacional del
+Biotipo de futbolista es:
+Estatura <1.70 m (Biotipo Bajo)
+1.70 m <=Estatura < 1.80 m (Biotipo Promedio)
+Estatura >= 1,80 m (Biotipo Superior)
+Ejecute 3 veces su función para las estaturas 1.65 m, 1.78 m y 1.95 m*/
+
+echo "<br><br>Ejercicio 9 <br>";
+
+$biotipo=calcularBiotipo(1.65);
+
+$biotipo=calcularBiotipo(1.78);
+
+$biotipo=calcularBiotipo(1.95);
 
 
+
+echo "<br><br>Ejercicio 10 <br>";
 
 
 
