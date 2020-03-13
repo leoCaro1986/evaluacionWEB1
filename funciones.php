@@ -23,9 +23,27 @@ function calcularBiotipo($biotipo)
     }
 }
 
+function edad($nacimiento, $actual){
+    $edad = $actual-$nacimiento;
+    return ($edad);
+    
+    }
 
-
-
+    function Biotipo($biotipo)
+    {
+        if($biotipo<1.70){
+            return("su Biotipo es bajo<br>");
+            
+        }
+        elseif ($biotipo>1.70 && $biotipo<1.80)
+        {
+            return ("Biotipo promedio<br>");
+        }
+        else
+        {
+            return ("Biotipo alto");
+        }
+    }
 
 
 

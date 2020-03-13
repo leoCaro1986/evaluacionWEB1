@@ -221,7 +221,28 @@ $biotipo=calcularBiotipo(1.95);
 
 echo "<br><br>Ejercicio 10 <br>";
 
+$SeleccionColombia=array(
+    'jugador1'=>array('JUGADOR'=>"Radamel Falcao",'AÑO DE NACIMIENTO'=>edad(1986,2020),'POSICION'=>"Delatero",'ESTATURA'=>Biotipo(1.77)),
+    'jugador2'=>array('JUGADOR'=>"James Rodríguez",'AÑO DE NACIMIENTO'=>edad(1991,2020),'POSICION'=>"Medio Campista",'ESTATURA'=>Biotipo(1.81)),
+    'jugador3'=>array('JUGADOR'=>"Juan Cuadrado",'AÑO DE NACIMIENTO'=>edad(1988,2020),'POSICION'=>"Delantero",'ESTATURA'=>Biotipo(1.78)),
+    'jugador4'=>array('JUGADOR'=>"Yerry Mina",'AÑO DE NACIMIENTO'=>edad(1994,2020),'POSICION'=>"Defensor",'ESTATURA'=>Biotipo(1.95)),
+    'jugador5'=>array('JUGADOR'=>"David Ospina",'AÑO DE NACIMIENTO'=>edad(1988,2020),'POSICION'=>"Portero",'ESTATURA'=>Biotipo(1.83)),
+    'jugador6'=>array('JUGADOR'=>"Davinsón Sanchez",'AÑO DE NACIMIENTO'=>edad(1996,2020),'POSICION'=>"Defensor",'ESTATURA'=>Biotipo(1.87)),
+    'jugador7'=>array('JUGADOR'=>"Duvan Zapata",'AÑO DE NACIMIENTO'=>edad(1991,2020),'POSICION'=>"Delatero",'ESTATURA'=>Biotipo(1.86)),
+    'jugador8'=>array('JUGADOR'=>"Wilmar Barrios",'AÑO DE NACIMIENTO'=>edad(1993,2020),'POSICION'=>"Medio Campista",'ESTATURA'=>Biotipo(1.78)),
+    'jugador9'=>array('JUGADOR'=>"Mateus Uribe",'AÑO DE NACIMIENTO'=>edad(1991,2020),'POSICION'=>"Medio Campista",'ESTATURA'=>Biotipo(1.80))
 
+);
+
+foreach($SeleccionColombia as $arregloseleccion => $arreglosjugador )
+{
+    echo("<br>".$arregloseleccion)."<br>";
+    /*echo("<br>");*/
+    foreach($arreglosjugador as $claves=>$valores)
+    {
+        echo($valores)."<br>";
+    }
+}
 
 
 
